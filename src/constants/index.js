@@ -1,4 +1,4 @@
-import { github, linkedin } from "../assets/icons";
+import { github, javascript, linkedin, mysql, react, php, nextjs, tailwind } from "../assets/icons";
 
 
 export const navLinks = [
@@ -10,6 +10,15 @@ export const navLinks = [
 ];
 
 export const socialLinks = [
-  {href: github, label: "Github"},
-  {href: linkedin, label: "LinkedIn"},
+  {href: "/",icon: github, label: "Github"},
+  {href: "/",icon: linkedin, label: "LinkedIn"},
 ];
+
+export const skillIcons = [
+  {icon: mysql, label: "MySql"},
+  {icon: react, label: "React"},
+  {icon: php, label: "PHP"},
+  {icon: javascript, label: "JavaScript"},
+  {icon: tailwind, label: "Tailwind"},
+  {icon: nextjs, label: "Next.js"},
+]

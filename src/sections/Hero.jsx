@@ -23,7 +23,7 @@ const Hero = () => {
           <ul className="flex justify-center items-center gap-8">
             {socialLinks.map((icon) => (
               <li key={icon.label}>
-                <img src={icon.href} alt={icon.label} width={38} height={38}/>
+                <a href={icon.href}><img src={icon.icon} alt={icon.label} width={38} height={38}/></a>
               </li>
             ))}
           </ul>
