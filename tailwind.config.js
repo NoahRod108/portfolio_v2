@@ -23,7 +23,8 @@ export default {
           mono: ['Roboto Mono', 'monospace'],
         },
         colors: {
-          'primary': "#222831",
+          'primary': "#191d24",
+          'secondary': "#2a313c",
           "dark-gray": "#999",
           "slate-gray": "#6D6D6D",
           "teal": "#00ADB5",
@@ -34,7 +35,10 @@ export default {
         },
         screens: {
           "wide": "1440px"
-        }
+        },
+        listStyleImage: {
+          arrow: 'url("/src/assets/icons/arrow-right.svg")',
+        },
       },
     },
     plugins: [],

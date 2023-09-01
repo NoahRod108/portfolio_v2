@@ -7,6 +7,7 @@ import nextjs from './nextjs.svg'
 import php from './php.svg'
 import react from './react.svg'
 import tailwind from './tailwind.svg'
+import arrowRight from './arrow-right.svg'
 
 export {
   download,
@@ -17,5 +18,6 @@ export {
   nextjs,
   php,
   react,
-  tailwind
+  tailwind,
+  arrowRight
 }

@@ -1,4 +1,5 @@
 import { github, javascript, linkedin, mysql, react, php, nextjs, tailwind } from "../assets/icons";
+import { coffee } from "../assets/images";
 
 
 export const navLinks = [
@@ -21,4 +22,31 @@ export const skillIcons = [
   {icon: javascript, label: "JavaScript"},
   {icon: tailwind, label: "Tailwind"},
   {icon: nextjs, label: "Next.js"},
+]
+
+export const projects = [
+  {
+    name: "project1",
+    img: coffee,
+    href: "/",
+    github: "/",
+    desc: "testDesc",
+    tags: ["test1", "test1", "test3"]
+  },
+  {
+    name: "project2",
+    img: coffee,
+    href: "/",
+    github: "/",
+    desc: "testDesc2",
+    tags: ["test1", "test1", "test3"]
+  },
+  {
+    name: "project3",
+    img: coffee,
+    href: "/",
+    github: "/",
+    desc: "testDesc3",
+    tags: ["test1", "test1", "test3"]
+  },
 ]
