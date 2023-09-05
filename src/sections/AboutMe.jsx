@@ -1,10 +1,17 @@
 import { coffee } from "../assets/images"
 import { skillIcons } from "../constants"
+import { motion } from 'framer-motion'
+import { slideIn, fadeIn } from "../utils/motion"
 
 const AboutMe = () => {
   return (
     <section id="aboutMe" className="max-container grid grid-cols-2 justify-center items-center max-lg:flex-col gap-10 w-full">
-      <div>
+      <motion.div
+        variants={fadeIn('up', 'tween', 0, 1)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{once: true}}
+      >
         <h2 className="text-4xl font-robot text-white font-bold lg:max-w-lg">
           About Me
         </h2>
@@ -15,21 +22,37 @@ const AboutMe = () => {
         <p className="mt-4 lg:max-w-lg info-text">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, vitae dolorum. Quis facilis nulla eligendi qui odio, eos laborum itaque?
         </p>
-      </div>
+      </motion.div>
 
-      <div>
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{once: true}}
+        variants={fadeIn('up', 'tween', 0, 1)}
+      >
         <img src={coffee} alt="Coffee" />
-      </div>
+      </motion.div>
 
       <div className="col-span-2 mt-8">
-        <h2 className="text-4xl font-robot text-white font-bold lg:max-w-lg">Skills</h2>
-        <ul className="flex justify-evenly items-center mt-8">
+        <motion.h2
+        initial="hidden"
+        whileInView="show"
+        viewport={{once: true}}
+        variants={fadeIn('up', 'tween', 0, 1)}
+        className="text-4xl font-robot text-white font-bold lg:max-w-lg">Skills</motion.h2>
+
+        <motion.ul
+        initial="hidden"
+        whileInView="show"
+        viewport={{once: true}}
+        variants={slideIn('right', 'tween', 0, 1)}
+        className="flex justify-evenly items-center mt-8">
           {skillIcons.map((icon) => (
             <li key={icon.label}>
               <img src={icon.icon} alt={icon.label}/>
             </li>
           ))}
-        </ul>
+        </motion.ul>
       </div>
     </section>
   )

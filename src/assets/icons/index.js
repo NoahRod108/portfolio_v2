@@ -8,6 +8,7 @@ import php from './php.svg'
 import react from './react.svg'
 import tailwind from './tailwind.svg'
 import arrowRight from './arrow-right.svg'
+import external from './external.svg'
 
 export {
   download,
@@ -19,5 +20,6 @@ export {
   php,
   react,
   tailwind,
-  arrowRight
+  arrowRight,
+  external
 }

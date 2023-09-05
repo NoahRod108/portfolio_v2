@@ -1,9 +1,16 @@
 import { navLinks } from "../constants"
+import { motion } from 'framer-motion'
+import { navVariants } from "../utils/motion"
 
 const Nav = () => {
   return (
     <header className="padding-x py-8 absolute z-10 w-full">
-      <nav className="flex justify-between items-center max-container">
+      <motion.nav
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{once: true}}
+      className="flex justify-between items-center max-container">
         {/* Nav Logo */}
         <a href="">
           <img src="" alt="Logo" />
@@ -19,7 +26,7 @@ const Nav = () => {
             </li>
           ))}
         </ul>
-      </nav>
+      </motion.nav>
     </header>
   )
 }

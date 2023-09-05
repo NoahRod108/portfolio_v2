@@ -26,27 +26,27 @@ export const skillIcons = [
 
 export const projects = [
   {
-    name: "project1",
+    name: "project-1",
     img: coffee,
     href: "/",
-    github: "/",
-    desc: "testDesc",
+    githubLink: "/",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur minus fugiat magnam vitae molestiae, natus autem tenetur dolores consectetur a?",
     tags: ["test1", "test1", "test3"]
   },
   {
-    name: "project2",
+    name: "project-2",
     img: coffee,
     href: "/",
-    github: "/",
-    desc: "testDesc2",
+    githubLink: "/",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur minus fugiat magnam vitae molestiae, natus autem tenetur dolores consectetur a?",
     tags: ["test1", "test1", "test3"]
   },
   {
-    name: "project3",
+    name: "project-3",
     img: coffee,
     href: "/",
-    github: "/",
-    desc: "testDesc3",
+    githubLink: "/",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur minus fugiat magnam vitae molestiae, natus autem tenetur dolores consectetur a?",
     tags: ["test1", "test1", "test3"]
   },
 ]

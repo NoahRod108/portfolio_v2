@@ -1,18 +1,31 @@
 import { arrowRight } from "../assets/icons"
+import { motion } from 'framer-motion'
+import { fadeIn } from "../utils/motion"
 
 const Experience = () => {
   return (
-    <section id="experience" className="max-container w-full flex flex-1 xl:flex-row flex-col justify-center gap-8">
-      <h2 className="text-4xl font-robot text-white font-bold lg:max-w-lg">Work Experience</h2>
-      <div>
-        <h3 className="text-xl font-robot text-white font-bold lg:max-w-lg">Solutions Engineer @ Valparaiso University</h3>
+    <section id="experience" className="max-container w-full flex flex-1 flex-col justify-center gap-8">
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{once: true}}
+        variants={fadeIn('up', 'tween', 0, 1)}
+      >
+        <h2 className="text-4xl font-robot text-white font-bold lg:max-w-lg">Work Experience</h2>
+        <h3 className="mt-8 text-xl font-robot text-white font-bold lg:max-w-lg">Solutions Engineer @ Valparaiso University</h3>
         <p className="font-mono text-dark-gray">2020 - Present</p>
         <p className="info-text mt-4">
           Currently, I am working as a Solutions Engineer at Valparaiso University. On a daily basis, I work with colleagues and students to create a better web experience. I also handle a few more responsibilities outside of web development. Below are a few examples of what I do. 
         </p>
-      </div>
+      </motion.div>
 
-      <div className="px-8">
+      <motion.div 
+        initial="hidden"
+        whileInView="show"
+        viewport={{once: true}}
+        variants={fadeIn('up', 'tween', 0, 1)}
+        className="px-8"
+      >
         <ul className="flex flex-col gap-4 text-dark-gray">
           <li className="flex items-center">
             <img src={arrowRight} />
@@ -31,7 +44,7 @@ const Experience = () => {
             Google admin for organization and help manage more complex features that Google provides like SAML authentication.
           </li>
         </ul>
-      </div>
+      </motion.div>
     </section>
   )
 }
