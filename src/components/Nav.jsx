@@ -56,8 +56,8 @@ const Nav = () => {
           viewport={{once: true}}
           className="flex justify-between items-center max-container">
             {/* Nav Logo */}
-            <a href="">
-              <img src="" alt="Logo" />
+            <a href="/">
+              <h3 className="text-2xl font-mono text-dark-gray hover:text-teal">Noah.Dev</h3>
             </a>
 
             {/* Nav Links */}

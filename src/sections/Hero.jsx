@@ -28,13 +28,16 @@ const Hero = () => {
           variants={textVariant(1.4)}
           className="flex justify-space-between items-center gap-16 w-full"
         >
-          <Button 
-            label="Download Resume"
-            iconURL={true}
-          />
+          <a href="https://noahrod108.github.io/digitalResume/assets/files/digitalResume_2023.pdf" target="_blank" rel="noopener noreferrer">
+            <Button 
+              label="Download Resume"
+              iconURL={true}
+            />
+          </a>
 
           <ul className="flex justify-center items-center gap-8">
-            <motion.a href="/"
+            <motion.a href="https://github.com/NoahRod108"
+              target="_blank" rel="noopener noreferrer"
               whileHover={{ scale: 1.2 }}
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"
@@ -44,7 +47,8 @@ const Hero = () => {
               </svg>
             </motion.a>
 
-            <motion.a href="/"
+            <motion.a href="https://www.linkedin.com/in/noah-rodriguez-8121041aa/"
+              target="_blank" rel="noopener noreferrer"
               whileHover={{ scale: 1.2 }}
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"

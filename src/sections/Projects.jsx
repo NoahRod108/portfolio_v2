@@ -3,7 +3,7 @@ import { projects } from "../constants"
 import PersonalProjects from '../components/PersonalProjects';
 
 const Projects = () => {
-  const [active, setActive] = useState('project-1');
+  const [active, setActive] = useState('Postopia');
 
   return (
     <section className="flex justify-center flex-col max-container min-h-screen w-full gap-8">

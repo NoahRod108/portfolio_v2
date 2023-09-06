@@ -1,5 +1,5 @@
 import { github, javascript, linkedin, mysql, react, php, nextjs, tailwind } from "../assets/icons";
-import { coffee } from "../assets/images";
+import { halloween, pokemon, post } from "../assets/images";
 
 
 export const navLinks = [
@@ -26,27 +26,27 @@ export const skillIcons = [
 
 export const projects = [
   {
-    name: "project-1",
-    img: coffee,
-    href: "/",
-    githubLink: "/",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur minus fugiat magnam vitae molestiae, natus autem tenetur dolores consectetur a?",
-    tags: ["test1", "test1", "test3"]
+    name: "Postopia",
+    img: post,
+    href: "https://next-js-tutorial-nine-xi.vercel.app/",
+    githubLink: "https://github.com/NoahRod108/next-js-tutorial",
+    desc: "This is a test project from JavaScript Mastery on YouTube. This is a project to learn Next.js and implement new features on my own. I added and fixed a few features to test what I have learned. I plan to come back and continue to expand the project.",
+    tags: ["Next", "Tailwind", "MongoDB"]
   },
   {
-    name: "project-2",
-    img: coffee,
-    href: "/",
-    githubLink: "/",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur minus fugiat magnam vitae molestiae, natus autem tenetur dolores consectetur a?",
-    tags: ["test1", "test1", "test3"]
+    name: "Guess That Pokemon",
+    img: pokemon,
+    href: "https://noahrod108.github.io/guess-that-pokemon/",
+    githubLink: "https://github.com/NoahRod108/guess-that-pokemon",
+    desc: "One of my first projects using React. This project is a simple guessing game. An image will appear on the grid. Random tiles will be hidden, making the image harder to guess. After each guess the tiles will randomize again giving you a better chance. I am currently in the process of creating a new version using Next.js. This will include a backend and tracking user progress.",
+    tags: ["React"]
   },
   {
-    name: "project-3",
-    img: coffee,
-    href: "/",
-    githubLink: "/",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur minus fugiat magnam vitae molestiae, natus autem tenetur dolores consectetur a?",
-    tags: ["test1", "test1", "test3"]
+    name: "Spooky Spirit",
+    img: halloween,
+    href: "https://spooky-spirit.onrender.com/",
+    githubLink: "none",
+    desc: "This project is my first attempt creating a full stack MERN project. Spooky Spirit is an e-commerce website where you can create an account and browse an online Halloween store. It is a fully functional CRUD application with admin accounts. You can add, edit and delete items for the store. At checkout, I am using the Paypal sanbox to simulate a purchase.",
+    tags: ["MongoDB", "Express", "React", "NodeJS", "Redux"]
   },
 ]

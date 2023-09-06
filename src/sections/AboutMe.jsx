@@ -1,7 +1,7 @@
 import { coffee } from "../assets/images"
 import { skillIcons } from "../constants"
 import { motion } from 'framer-motion'
-import { slideIn, fadeIn } from "../utils/motion"
+import { fadeIn } from "../utils/motion"
 
 const AboutMe = () => {
   return (
@@ -34,19 +34,19 @@ const AboutMe = () => {
       </motion.div>
 
       <div className="col-span-2 mt-8">
-        <motion.h2
+        <motion.h3
         initial="hidden"
         whileInView="show"
         viewport={{once: true}}
         variants={fadeIn('up', 'tween', 0, 1)}
-        className="text-4xl font-robot text-white font-bold lg:max-w-lg">Skills</motion.h2>
+        className="text-3xl font-robot text-white font-bold lg:max-w-lg">Skills</motion.h3>
 
         <motion.ul
         initial="hidden"
         whileInView="show"
         viewport={{once: true}}
-        variants={slideIn('right', 'tween', 0, 1)}
-        className="flex justify-evenly items-center mt-8">
+        variants={fadeIn('up', 'tween', 0, 1)}
+        className="flex justify-start items-center mt-8 gap-16">
           {skillIcons.map((icon) => (
             <li key={icon.label}>
               <img src={icon.icon} alt={icon.label}/>
