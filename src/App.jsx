@@ -1,5 +1,6 @@
 import { Hero, AboutMe, Experience, Projects, Contact } from "./sections"
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 const App = () => (
   <main className="relative bg-primary">
@@ -19,6 +20,7 @@ const App = () => (
     <section className="padding">
       <Contact />
     </section>
+    <Footer />
   </main>
 )
 

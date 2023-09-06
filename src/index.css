@@ -20,6 +20,17 @@
   .input {
     @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
   }
+
+  .btn-animate {
+    color: #00ADB5;
+    border: 1px solid #00ADB5;
+    box-shadow: 4px 12px 0 #00ADB5;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-animate:hover > svg {
+    fill: #00ADB5;
+  }
 }
 
 @layer utilities {
@@ -53,5 +64,13 @@
 
   .info-text {
     @apply font-robot text-dark-gray text-lg leading-7;
+  }
+
+  .project-icon{
+    fill: #00ADB5;
+  }
+
+  .default-icon{
+    fill: #999;
   }
 }

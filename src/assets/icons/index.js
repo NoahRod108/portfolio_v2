@@ -9,6 +9,7 @@ import react from './react.svg'
 import tailwind from './tailwind.svg'
 import arrowRight from './arrow-right.svg'
 import external from './external.svg'
+import hamburger from './hamburger.svg'
 
 export {
   download,
@@ -21,5 +22,6 @@ export {
   react,
   tailwind,
   arrowRight,
-  external
+  external,
+  hamburger
 }
