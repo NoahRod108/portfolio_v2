@@ -1,5 +1,5 @@
 import coffee from './coffee.jpg'
-import halloween from './SSH.jpg'
+import halloween from './ssh.jpg'
 import pokemon from './pokemon.jpg'
 import post from './post.jpg'
 
