@@ -16,11 +16,15 @@ const AboutMe = () => {
           About Me
         </h2>
         <p className="mt-8 lg:max-w-lg info-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In assumenda, ipsum, tempora sunt omnis iste, ab neque blanditiis laudantium expedita sit sed a at! Nihil consequatur nobis labore velit laudantium.
+          Starting out as an electrical engineer I found myself developing a deep passion for coding. After a degree change, I started taking up many new interests in the field of web development. Today, I am working at my nearby university as a solution engineer. I help manage and develop our in-house web applications. On a daily basis, I work with <span className="text-teal">HTML</span> , <span className="text-teal">CSS</span>, <span className="text-teal">JavaScript</span>, <span className="text-teal">PHP</span>, and <span className="text-teal">MySQL</span>.
         </p>
 
         <p className="mt-4 lg:max-w-lg info-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, vitae dolorum. Quis facilis nulla eligendi qui odio, eos laborum itaque?
+          My main focus is working with <span className="text-teal">React</span> and <span className="text-teal">Next.js</span>. I aspire to be a <span className="text-teal">full-stack developer</span> and take one step at a time to reach that goal. In my free time, I work on personal projects and take courses to develop my skills.
+        </p>
+
+        <p className="mt-4 lg:max-w-lg info-text">
+          Other than coding, I’m usually playing virtual or tabletop games with my friends, camping, or finding somewhere new to explore.
         </p>
         <div className="col-span-2 mt-8">
           <motion.h3
@@ -57,7 +61,7 @@ const AboutMe = () => {
         viewport={{once: true}}
         variants={fadeIn('up', 'tween', 0, 1)}
       >
-        <img src={coffee} alt="Coffee" />
+        <img src={coffee} alt="Coffee" className="w-full" />
       </motion.div>
 
     </section>
