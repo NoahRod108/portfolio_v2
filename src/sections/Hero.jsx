@@ -14,8 +14,9 @@ const Hero = () => {
         variants={textVariant(1.1)}
         className="text-xl font-mono font-bold text-teal px-1">Hello, I am</motion.p>
         <motion.h1
-        variants={textVariant(1.2)}
-        className="mt-2 font-robot text-6xl max-sm:text-[72px] max-sm:leading-[82px] font-bold text-white">
+          variants={textVariant(1.2)}
+          className="mt-2 font-robot text-6xl max-sm:text-[64px] max-sm:leading-[82px] font-bold text-white"
+        >
           Noah Rodriguez <br />
           <span className="text-dark-gray">Web Developer</span>
         </motion.h1>
@@ -26,7 +27,7 @@ const Hero = () => {
         
         <motion.div
           variants={textVariant(1.4)}
-          className="flex justify-space-between items-center gap-16 w-full"
+          className="xl:flex-row flex-col flex justify-space-between items-center xl:gap-16 gap-10 w-full"
         >
           <a href="https://noahrod108.github.io/digitalResume/assets/files/digitalResume_2023.pdf" target="_blank" rel="noopener noreferrer">
             <Button 

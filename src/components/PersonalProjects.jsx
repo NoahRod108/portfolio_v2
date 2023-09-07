@@ -17,8 +17,9 @@ const PersonalProjects = ({ name, img, desc, href, githubLink, tags, active, han
       />
       {active === name &&(
         <div 
-        className='absolute p-8 justify-start w-full bottom-0 flex-col bg-[rgba(0,0,0,0.8)] rounded-b-[24px] font-robot text-white'>
-          <div className='flex justify-between'>
+          className='absolute p-8 justify-start w-full bottom-0 flex-col bg-[rgba(0,0,0,0.8)] rounded-b-[24px] max-sm:rounded-[24px] max-sm:h-full font-robot text-white'
+        >
+          <div className='flex justify-between items-center'>
             <h3 className='text-2xl font-bold'>{name}</h3>
             <div className='flex gap-4'>
               {/* External link icon - Needed to change styles, so no image is used */}
@@ -47,11 +48,11 @@ const PersonalProjects = ({ name, img, desc, href, githubLink, tags, active, han
             </div>
           </div>
 
-          <div className='mt-6 info-text'>
+          <div className='mt-6 info-text max-sm:text-sm'>
             <p>{desc}</p>
           </div>
 
-          <ul className='flex gap-4 justify-end mt-4'>
+          <ul className='flex flex-wrap max-sm:gap-y-0 gap-4 justify-end mt-4 w-full'>
             {tags.map((tag, index) => (
               <li key={index} className='text-teal font-mono mt-2'>
                 {tag}

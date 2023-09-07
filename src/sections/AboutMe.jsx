@@ -5,7 +5,7 @@ import { fadeIn } from "../utils/motion"
 
 const AboutMe = () => {
   return (
-    <section id="aboutMe" className="max-container grid grid-cols-2 justify-center items-center max-lg:flex-col gap-10 w-full">
+    <section id="aboutMe" className="max-container xl:grid xl:grid-cols-2 flex flex-col justify-center items-center gap-10 w-full">
       <motion.div
         variants={fadeIn('up', 'tween', 0, 1)}
         initial="hidden"
@@ -46,9 +46,11 @@ const AboutMe = () => {
         whileInView="show"
         viewport={{once: true}}
         variants={fadeIn('up', 'tween', 0, 1)}
-        className="flex justify-start items-center mt-8 gap-16">
+        className="flex flex-wrap justify-start items-center mt-8 gap-16">
           {skillIcons.map((icon) => (
-            <li key={icon.label}>
+            <li key={icon.label}
+              className="w-[64px]"
+            >
               <img src={icon.icon} alt={icon.label}/>
             </li>
           ))}

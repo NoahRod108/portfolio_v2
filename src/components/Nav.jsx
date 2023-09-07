@@ -48,7 +48,7 @@ const Nav = () => {
         </div>
       </motion.div>
 
-      <div className="padding-x py-8 absolute z-10 w-full">
+      <div className="padding-x py-8 z-10 w-full">
         <motion.nav
           variants={navVariants}
           initial="hidden"
@@ -57,11 +57,11 @@ const Nav = () => {
           className="flex justify-between items-center max-container">
             {/* Nav Logo */}
             <a href="/">
-              <h3 className="text-2xl font-mono text-dark-gray hover:text-teal">Noah.Dev</h3>
+              <h3 className="text-2xl font-mono text-dark-gray hover:text-teal max-sm:hidden">Noah.Dev</h3>
             </a>
 
             {/* Nav Links */}
-            <ul className="flex flex-1 justify-end items-center gap-16 max-lg:hidden">
+            <ul className="flex flex-1 justify-end items-center gap-14 max-lg:hidden">
               {navLinks.map((link) => (
                 <li key={link.label}>
                   <a href={link.href} className="font-mono leading-normal text-lg text-dark-gray hover:text-teal">
@@ -72,7 +72,7 @@ const Nav = () => {
             </ul>
 
             {/* Mobile */}
-            <div className="hidden max-lg:block cursor-pointer">
+            <div className="hidden relative max-lg:block cursor-pointer z-11">
               <button onClick={onClick}>
                 <svg width="48" height="48" viewBox="0 0 24 24">
                   <motion.path
