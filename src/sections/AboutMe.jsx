@@ -24,7 +24,7 @@ const AboutMe = () => {
         </p>
 
         <p className="mt-4 lg:max-w-lg info-text">
-          Other than coding, I’m usually playing virtual or tabletop games with my friends, camping, or finding somewhere new to explore.
+          Other than coding, I’m usually playing virtual or tabletop games, camping, or finding somewhere new to explore.
         </p>
         <div className="col-span-2 mt-8">
           <motion.h3

@@ -15,6 +15,8 @@ const Nav = () => {
     setDrawer(drawer === false ? true : false)
   };
 
+  console.log(drawer)
+
   if(drawer === true) {
     document.body.style.overflow = 'hidden'
   }
@@ -29,17 +31,17 @@ const Nav = () => {
         <div className="absolute z-2 w-full h-[100vh] backdrop-blur-sm"></div>
       )}
       <motion.div 
-        className={`absolute right-0 ${drawer === false && 'hidden'}`}
+        className={`fixed w-full h-screen bg-secondary ${drawer === false && 'hidden'}`}
         variants={slideIn('right','tween',0,0.5)}
         initial="hidden"
         whileInView="show"
         viewport={{once: false}}
       >
-        <div className="w-[40vw] h-[100vh] bg-secondary z-9">
-          <ul className="flex flex-col justify-center items-center gap-12 pt-64">
+        <div className="flex justify-center items-center h-full">
+          <ul className="flex flex-col justify-center gap-12 p-8">
             {navLinks.map((link) => (
               <li onClick={onClick} key={link.label}>
-                <a href={link.href} className="font-mono leading-normal text-2xl text-dark-gray focus:text-teal">
+                <a href={link.href} className="font-mono leading-normal text-3xl text-dark-gray focus:text-teal">
                   {link.label}
                 </a>
               </li>
