@@ -59,17 +59,22 @@ const Nav = () => {
           className="flex justify-between items-center max-container">
             {/* Nav Logo */}
             <a href="/">
-              <h3 className="text-2xl font-mono text-dark-gray hover:text-teal max-sm:hidden">Noah.Dev</h3>
+              <motion.h3 whileHover={{ scale: 1.1 }} className="text-2xl font-mono text-dark-gray hover:text-teal max-sm:hidden">Noah.Dev</motion.h3>
             </a>
 
             {/* Nav Links */}
             <ul className="flex flex-1 justify-end items-center gap-14 max-lg:hidden">
               {navLinks.map((link) => (
-                <li key={link.label}>
-                  <a href={link.href} className="font-mono leading-normal text-lg text-dark-gray hover:text-teal">
+                <motion.li 
+                  key={link.label} 
+                  whileHover={{ scale: 1.1 }}
+                >
+                  <a 
+                    href={link.href} 
+                    className="font-mono leading-normal text-lg text-dark-gray hover:text-teal">
                     {link.label}
                   </a>
-                </li>
+                </motion.li>
               ))}
             </ul>
 

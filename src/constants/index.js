@@ -1,4 +1,4 @@
-import { github, javascript, linkedin, mysql, react, php, nextjs, tailwind } from "../assets/icons";
+import { github, javascript, linkedin, mysql, react, php, nextjs, tailwind, html, css } from "../assets/icons";
 import { halloween, pokemon, post } from "../assets/images";
 
 
@@ -16,10 +16,12 @@ export const socialLinks = [
 ];
 
 export const skillIcons = [
+  {icon: html, label: "HTML"},
+  {icon: css, label: "CSS"},
+  {icon: javascript, label: "JavaScript"},
+  {icon: php, label: "PHP"},
   {icon: mysql, label: "MySql"},
   {icon: react, label: "React"},
-  {icon: php, label: "PHP"},
-  {icon: javascript, label: "JavaScript"},
   {icon: tailwind, label: "Tailwind"},
   {icon: nextjs, label: "Next.js"},
 ]

@@ -4,7 +4,7 @@ import { fadeIn } from "../utils/motion"
 
 const Experience = () => {
   return (
-    <section id="experience" className="max-container w-full flex flex-1 flex-col justify-center gap-8 min-h-screen">
+    <section id="experience" className="max-container w-full flex flex-1 flex-col justify-center gap-8">
       <motion.div
         initial="hidden"
         whileInView="show"

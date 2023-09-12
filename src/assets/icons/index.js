@@ -10,6 +10,8 @@ import tailwind from './tailwind.svg'
 import arrowRight from './arrow-right.svg'
 import external from './external.svg'
 import hamburger from './hamburger.svg'
+import html from './html.svg'
+import css from './css.svg'
 
 export {
   download,
@@ -23,5 +25,7 @@ export {
   tailwind,
   arrowRight,
   external,
-  hamburger
+  hamburger,
+  html,
+  css
 }

@@ -15,7 +15,7 @@ const Hero = () => {
         className="text-xl font-mono font-bold text-teal px-1">Hello, I am</motion.p>
         <motion.h1
           variants={textVariant(1.2)}
-          className="mt-2 font-robot text-6xl max-sm:text-[64px] max-sm:leading-[82px] font-bold text-white"
+          className="mt-2 font-robot text-6xl max-sm:text-[48px] max-sm:leading-[64px] font-bold text-white"
         >
           Noah Rodriguez <br />
           <span className="text-dark-gray">Web Developer</span>
