@@ -30,7 +30,7 @@ const Hero = () => {
           variants={textVariant(1.4)}
           className="xl:flex-row flex-col flex justify-space-between items-center xl:gap-16 gap-10 w-full"
         >
-          <a href="https://noahrod108.github.io/digitalResume/assets/files/2023_Resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="https://noahrod108.github.io/digitalResume/assets/2023_Resume.pdf" target="_blank" rel="noopener noreferrer">
             <Button 
               label="Download Resume"
               iconURL={true}
