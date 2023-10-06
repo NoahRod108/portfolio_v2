@@ -22,7 +22,8 @@ const Hero = () => {
         </motion.h1>
         <motion.p
         variants={textVariant(1.3)}
-        className="info-text my-8 px-1 text-xl">I&apos;m a devloper with a deep passion for bringing the web to life. Currently, I&apos;m focused on building <span className="text-teal">React (Next.js)</span> applications.
+        className="info-text my-8 px-1 text-xl">
+        I&apos;m a devloper with a deep passion for bringing the web to life. Currently, I&apos;m focused on building <span className="text-teal">React (Next.js)</span> applications.
         </motion.p>
         
         <motion.div

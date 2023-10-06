@@ -15,8 +15,6 @@ const Nav = () => {
     setDrawer(drawer === false ? true : false)
   };
 
-  console.log(drawer)
-
   if(drawer === true) {
     document.body.style.overflow = 'hidden'
   }
@@ -28,7 +26,7 @@ const Nav = () => {
   return (
     <header className="relative">
       {drawer && (
-        <div className="absolute z-2 w-full h-[100vh] backdrop-blur-sm"></div>
+        <div className="absolute z-5 w-full h-[100vh] backdrop-blur-sm"></div>
       )}
       <motion.div 
         className={`fixed w-full h-screen bg-secondary ${drawer === false && 'hidden'}`}

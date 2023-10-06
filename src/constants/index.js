@@ -28,12 +28,12 @@ export const skillIcons = [
 
 export const projects = [
   {
-    name: "Postopia",
+    name: "MyPost",
     img: post,
     href: "https://next-js-tutorial-nine-xi.vercel.app/",
     githubLink: "https://github.com/NoahRod108/next-js-tutorial",
-    desc: "This is a test project from JavaScript Mastery on YouTube. This is a project to learn Next.js and implement new features on my own. I added and fixed a few features to test what I have learned. I plan to come back and continue to expand the project.",
-    tags: ["Next", "Tailwind", "MongoDB"]
+    desc: "This is a project to learn Next.js and practice new technologies. I plan to come back and continue to expand on the project.",
+    tags: ["Next.js", "Tailwind", "MongoDB", "NextAuth"]
   },
   {
     name: "Guess That Pokemon",

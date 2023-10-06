@@ -48,11 +48,11 @@ const PersonalProjects = ({ name, img, desc, href, githubLink, tags, active, han
             </div>
           </div>
 
-          <div className='mt-6 info-text max-sm:text-sm'>
+          <div className='mt-6 info-text max-sm:text-sm max-[280px]:hidden'>
             <p>{desc}</p>
           </div>
 
-          <ul className='flex flex-wrap max-sm:gap-y-0 gap-4 justify-end mt-4 w-full'>
+          <ul className='flex flex-wrap max-sm:gap-y-0 max-[280px]:hidden gap-4 justify-end mt-4 w-full'>
             {tags.map((tag, index) => (
               <li key={index} className='text-teal font-mono mt-2'>
                 {tag}
