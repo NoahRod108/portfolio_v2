@@ -37,11 +37,11 @@ const Experience = () => {
           </li>
           <li className="flex items-center">
             <img src={arrowRight} />
-            Lead and assist in new integrations to intrdouce new tools to our university.
+            Lead and assist in integrations to introduce new tools to our university.
           </li>
           <li className="flex items-center">
             <img src={arrowRight} />
-            Google admin for organization and help manage more complex features that Google provides like SAML authentication.
+            Google admin for organization and help manage more complex features that Google provides like SAML authentication and SSO.
           </li>
         </ul>
       </motion.div>
