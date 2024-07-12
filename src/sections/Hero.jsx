@@ -33,7 +33,7 @@ const Hero = () => {
         >
           I&apos;m a devloper with a deep passion for bringing the web to life.
           Currently, I&apos;m focused on building{" "}
-          <span className="text-teal">React (Next.js)</span> applications.
+          <span className="text-teal">Full Stack</span> applications.
         </motion.p>
 
         <motion.div

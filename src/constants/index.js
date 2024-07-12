@@ -10,7 +10,7 @@ import {
   html,
   css,
 } from "../assets/icons";
-import { halloween, pokemon, post, home } from "../assets/images";
+import { halloween, post, home } from "../assets/images";
 
 export const navLinks = [
   { href: "#hero", label: "Home" },
@@ -53,14 +53,14 @@ export const projects = [
     desc: "This is a project to learn Next.js and practice new technologies. I plan to come back and continue to expand on the project.",
     tags: ["Next.js", "Tailwind", "MongoDB", "NextAuth"],
   },
-  {
-    name: "Guess That Pokemon",
-    img: pokemon,
-    href: "https://noahrod108.github.io/guess-that-pokemon/",
-    githubLink: "https://github.com/NoahRod108/guess-that-pokemon",
-    desc: "One of my first projects using React. This project is a simple guessing game. An image will appear on the grid. Random tiles will be hidden, making the image harder to guess. After each guess the tiles will randomize again giving you a better chance. I am currently in the process of creating a new version using Next.js. This will include a backend and tracking user progress.",
-    tags: ["React"],
-  },
+  // {
+  //   name: "Guess That Pokemon",
+  //   img: pokemon,
+  //   href: "https://noahrod108.github.io/guess-that-pokemon/",
+  //   githubLink: "https://github.com/NoahRod108/guess-that-pokemon",
+  //   desc: "One of my first projects using React. This project is a simple guessing game. An image will appear on the grid. Random tiles will be hidden, making the image harder to guess. After each guess the tiles will randomize again giving you a better chance. I am currently in the process of creating a new version using Next.js. This will include a backend and tracking user progress.",
+  //   tags: ["React"],
+  // },
   {
     name: "Spooky Spirit",
     img: halloween,
