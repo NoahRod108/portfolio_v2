@@ -10,7 +10,7 @@ import {
   html,
   css,
 } from "../assets/icons";
-import { halloween, post, home } from "../assets/images";
+import { visualizer, post, home } from "../assets/images";
 
 export const navLinks = [
   { href: "#hero", label: "Home" },
@@ -62,11 +62,11 @@ export const projects = [
   //   tags: ["React"],
   // },
   {
-    name: "Spooky Spirit",
-    img: halloween,
-    href: "https://spooky-spirit.onrender.com/",
-    githubLink: "none",
-    desc: "This project is my first attempt creating a full stack MERN project. Spooky Spirit is an e-commerce website where you can create an account and browse an online Halloween store. It is a fully functional CRUD application with admin accounts. You can add, edit and delete items for the store. At checkout, I am using the Paypal sanbox to simulate a purchase.",
-    tags: ["MongoDB", "Express", "React", "NodeJS", "Redux"],
+    name: "Visualizer",
+    img: visualizer,
+    href: "https://visualizer-wine-three.vercel.app/",
+    githubLink: "https://github.com/NoahRod108/visualizer",
+    desc: "A conversion of an old React project I worked on with classmates. I decided to convert the visualizer to TypeScript for practice. You can choose one of three algorithms and adjust the sorting speed. I also decided to make it mobile responsive.",
+    tags: ["Next.js", "Tailwind", "TypeScript"],
   },
 ];

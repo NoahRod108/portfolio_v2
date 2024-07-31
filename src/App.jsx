@@ -1,6 +1,6 @@
-import { Hero, AboutMe, Experience, Projects, Contact } from "./sections"
-import Nav from './components/Nav';
-import Footer from './components/Footer';
+import { Hero, AboutMe, Experience, Projects, Contact } from "./sections";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 const App = () => (
   <main className="relative bg-primary">
@@ -9,19 +9,19 @@ const App = () => (
       <Hero />
     </section>
     <section className="padding">
+      <Projects />
+    </section>
+    <section className="padding">
       <AboutMe />
     </section>
     <section className="padding">
       <Experience />
     </section>
     <section className="padding">
-      <Projects />
-    </section>
-    <section className="padding">
       <Contact />
     </section>
     <Footer />
   </main>
-)
+);
 
 export default App;
