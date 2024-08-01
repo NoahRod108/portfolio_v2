@@ -22,7 +22,7 @@ const PersonalProjects = ({
         active === name
           ? "lg:flex-[2.5] flex-[10] cursor-default"
           : "lg:flex-[0.5] flex-[2] cursor-pointer"
-      } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.5s] ease-out-flex`}
+      } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.5s] ease-[cubic-bezier(0.87,-1.38,0.03,1.54)]`}
       onClick={() => handleClick(name)}
       whileHover={active !== name ? { scale: 1.02 } : { scale: 1 }}
     >
